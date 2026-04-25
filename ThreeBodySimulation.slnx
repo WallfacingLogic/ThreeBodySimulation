@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="ThreeBodySimulation/ThreeBodySimulation.vcxproj" Id="24e4db29-2b08-4d51-92ec-0716f69401f0" />
-</Solution>

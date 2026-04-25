@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Projects/C++/ThreeBodySimulation/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
