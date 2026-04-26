@@ -5,7 +5,8 @@
 #include <cmath>
 
 // 示例1：太阳-地球-月球系统
-void example_solar_system(ThreeBodySolver& solver) {
+void example_solar_system(ThreeBodySolver &solver)
+{
     std::cout << "\n=== Example 1: Sun-Earth-Moon System ===" << std::endl;
 
     // 太阳 (质量: 1.989e30 kg)
@@ -19,7 +20,8 @@ void example_solar_system(ThreeBodySolver& solver) {
 }
 
 // 示例2：等质量三体系统（拉格朗日点配置）
-void example_equal_mass(ThreeBodySolver& solver) {
+void example_equal_mass(ThreeBodySolver &solver)
+{
     std::cout << "\n=== Example 2: Equal Mass Three-Body System ===" << std::endl;
 
     double mass = 1.0e30;
@@ -28,13 +30,14 @@ void example_equal_mass(ThreeBodySolver& solver) {
     // 三个等质量天体在等边三角形顶点
     solver.add_body("Body1", mass, radius, 0.0, 0.0, 0.0, 30000.0, 0.0);
     solver.add_body("Body2", mass, -radius * 0.5, radius * std::sqrt(3.0) * 0.5, 0.0,
-        -15000.0, -25980.0, 0.0);
+                    -15000.0, -25980.0, 0.0);
     solver.add_body("Body3", mass, -radius * 0.5, -radius * std::sqrt(3.0) * 0.5, 0.0,
-        -15000.0, 25980.0, 0.0);
+                    -15000.0, 25980.0, 0.0);
 }
 
 // 示例3：混沌三体系统
-void example_chaotic(ThreeBodySolver& solver) {
+void example_chaotic(ThreeBodySolver &solver)
+{
     std::cout << "\n=== Example 3: Chaotic Three-Body System ===" << std::endl;
 
     double mass = 1.0e30;
@@ -43,7 +46,8 @@ void example_chaotic(ThreeBodySolver& solver) {
     solver.add_body("Star3", mass, 0.0, 2.0e11, 0.0, 30000.0, 0.0, 0.0);
 }
 
-int main() {
+int main()
+{
     std::cout << "=========================================" << std::endl;
     std::cout << "  Scientific Three-Body Simulation" << std::endl;
     std::cout << "=========================================" << std::endl;
@@ -62,7 +66,8 @@ int main() {
     int choice;
     std::cin >> choice;
 
-    switch (choice) {
+    switch (choice)
+    {
     case 1:
         example_solar_system(solver);
         break;
@@ -75,7 +80,8 @@ int main() {
     case 4:
         // 自定义输入
         std::cout << "\nEnter parameters for three bodies:" << std::endl;
-        for (int i = 1; i <= 3; ++i) {
+        for (int i = 1; i <= 3; ++i)
+        {
             std::string name;
             double mass, x, y, z, vx, vy, vz;
 
@@ -112,14 +118,16 @@ int main() {
 
     std::cout << "\nSimulation Parameters:" << std::endl;
     std::cout << "Time step (s) [default: 3600]: ";
-    if (!(std::cin >> time_step)) {
+    if (!(std::cin >> time_step))
+    {
         time_step = 3600.0; // 默认1小时
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
 
     std::cout << "Total simulation time (s) [default: 31536000 = 1 year]: ";
-    if (!(std::cin >> total_time)) {
+    if (!(std::cin >> total_time))
+    {
         total_time = 31536000.0;
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -127,13 +135,15 @@ int main() {
 
     std::cout << "Use symplectic integrator? (1=Yes, 0=No) [default: 1]: ";
     int symplectic_choice;
-    if (std::cin >> symplectic_choice) {
+    if (std::cin >> symplectic_choice)
+    {
         use_symplectic = (symplectic_choice == 1);
     }
 
     std::cout << "Use adaptive step size? (1=Yes, 0=No) [default: 0]: ";
     int adaptive_choice;
-    if (std::cin >> adaptive_choice) {
+    if (std::cin >> adaptive_choice)
+    {
         adaptive_step = (adaptive_choice == 1);
     }
 
@@ -142,7 +152,7 @@ int main() {
     // 显示初始能量
     double initial_energy = solver.get_initial_energy();
     std::cout << "\nInitial Total Energy: " << std::scientific
-        << std::setprecision(15) << initial_energy << " J" << std::endl;
+              << std::setprecision(15) << initial_energy << " J" << std::endl;
 
     // 运行模拟
     std::cout << "\nStarting simulation..." << std::endl;
@@ -156,7 +166,8 @@ int main() {
     std::cout << "\nEnter output filename (e.g., results.csv): ";
     std::cin >> filename;
 
-    if (filename.empty()) {
+    if (filename.empty())
+    {
         filename = "three_body_results.csv";
     }
 
@@ -168,11 +179,12 @@ int main() {
     std::cout << "----------------------------------------" << std::endl;
 
     int start_idx = std::max(0, static_cast<int>(results.size()) - 5);
-    for (int i = start_idx; i < static_cast<int>(results.size()); ++i) {
+    for (int i = start_idx; i < static_cast<int>(results.size()); ++i)
+    {
         std::cout << std::setw(12) << std::fixed << std::setprecision(2)
-            << results[i].time
-            << std::setw(25) << std::scientific << std::setprecision(15)
-            << results[i].total_energy << std::endl;
+                  << results[i].time
+                  << std::setw(25) << std::scientific << std::setprecision(15)
+                  << results[i].total_energy << std::endl;
     }
 
     std::cout << "\nSimulation completed successfully!" << std::endl;

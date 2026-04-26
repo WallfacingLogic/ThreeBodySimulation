@@ -3,7 +3,8 @@
 
 #include <mpfr.h>
 
-namespace Constants {
+namespace Constants
+{
     // 万有引力常数 (m^3 kg^-1 s^-2)
     const double GRAVITATIONAL_CONSTANT = 6.67430e-11;
 

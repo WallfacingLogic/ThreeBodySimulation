@@ -7,22 +7,25 @@
 #include <vector>
 
 // 天体结构体
-struct CelestialBody {
+struct CelestialBody
+{
 	std::string name;
-	double mass;          // 质量 (kg)
-	Vector3 position;     // 位置 (m)
-	Vector3 velocity;     // 速度 (m/s)
+	double mass;		  // 质量 (kg)
+	Vector3 position;	  // 位置 (m)
+	Vector3 velocity;	  // 速度 (m/s)
 	Vector3 acceleration; // 加速度 (m/s^2)
 
-	CelestialBody(const std::string& n, double m,
-		double px, double py, double pz,
-		double vx, double vy, double vz)
-		: name(n), mass(m), position(px, py, pz), velocity(vx, vy, vz) {
+	CelestialBody(const std::string &n, double m,
+				  double px, double py, double pz,
+				  double vx, double vy, double vz)
+		: name(n), mass(m), position(px, py, pz), velocity(vx, vy, vz)
+	{
 	}
 };
 
 // 模拟结果结构体
-struct SimulationResult {
+struct SimulationResult
+{
 	double time;
 	std::vector<Vector3> positions;
 	std::vector<Vector3> velocities;
@@ -31,7 +34,8 @@ struct SimulationResult {
 };
 
 // 三体问题求解器类
-class ThreeBodySolver {
+class ThreeBodySolver
+{
 private:
 	std::vector<CelestialBody> bodies;
 	double time_step;
@@ -66,25 +70,25 @@ public:
 	~ThreeBodySolver();
 
 	// 添加天体
-	void add_body(const std::string& name, double mass,
-		double px, double py, double pz,
-		double vx, double vy, double vz);
+	void add_body(const std::string &name, double mass,
+				  double px, double py, double pz,
+				  double vx, double vy, double vz);
 
 	// 设置模拟参数
 	void set_simulation_params(double dt, double total_time,
-		bool symplectic = true,
-		bool adaptive = false);
+							   bool symplectic = true,
+							   bool adaptive = false);
 
 	// 运行模拟
 	std::vector<SimulationResult> run_simulation(int output_interval = 1);
 
 	// 导出结果到CSV文件
-	void export_to_csv(const std::vector<SimulationResult>& results,
-		const std::string& filename);
+	void export_to_csv(const std::vector<SimulationResult> &results,
+					   const std::string &filename);
 
 	// 验证能量守恒
-	bool verify_energy_conservation(const std::vector<SimulationResult>& results,
-		double tolerance = Constants::ENERGY_TOLERANCE);
+	bool verify_energy_conservation(const std::vector<SimulationResult> &results,
+									double tolerance = Constants::ENERGY_TOLERANCE);
 
 	// 获取初始总能量
 	double get_initial_energy() const;
