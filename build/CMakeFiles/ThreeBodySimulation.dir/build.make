@@ -76,29 +76,29 @@ CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o: CMakeFiles/ThreeBodySimulatio
 CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o: /Projects/C++/ThreeBodySimulation/src/main.cpp
 CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o: CMakeFiles/ThreeBodySimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Projects/C++/ThreeBodySimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o -MF CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o.d -o CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o -c /Projects/C++/ThreeBodySimulation/src/main.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o -MF CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o.d -o CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o -c /Projects/C++/ThreeBodySimulation/src/main.cpp
 
 CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Projects/C++/ThreeBodySimulation/src/main.cpp > CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Projects/C++/ThreeBodySimulation/src/main.cpp > CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.i
 
 CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Projects/C++/ThreeBodySimulation/src/main.cpp -o CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Projects/C++/ThreeBodySimulation/src/main.cpp -o CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.s
 
 CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o: CMakeFiles/ThreeBodySimulation.dir/flags.make
 CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o: /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp
 CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o: CMakeFiles/ThreeBodySimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Projects/C++/ThreeBodySimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o -MF CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o.d -o CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o -c /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o -MF CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o.d -o CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o -c /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp
 
 CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp > CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp > CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.i
 
 CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp -o CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp -o CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.s
 
 # Object files for target ThreeBodySimulation
 ThreeBodySimulation_OBJECTS = \
@@ -111,7 +111,6 @@ ThreeBodySimulation_EXTERNAL_OBJECTS =
 /Projects/C++/ThreeBodySimulation/bin/ThreeBodySimulation: CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o
 /Projects/C++/ThreeBodySimulation/bin/ThreeBodySimulation: CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o
 /Projects/C++/ThreeBodySimulation/bin/ThreeBodySimulation: CMakeFiles/ThreeBodySimulation.dir/build.make
-/Projects/C++/ThreeBodySimulation/bin/ThreeBodySimulation: CMakeFiles/ThreeBodySimulation.dir/compiler_depend.ts
 /Projects/C++/ThreeBodySimulation/bin/ThreeBodySimulation: CMakeFiles/ThreeBodySimulation.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Projects/C++/ThreeBodySimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /Projects/C++/ThreeBodySimulation/bin/ThreeBodySimulation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ThreeBodySimulation.dir/link.txt --verbose=$(VERBOSE)

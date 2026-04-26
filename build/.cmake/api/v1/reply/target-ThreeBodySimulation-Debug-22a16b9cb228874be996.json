@@ -47,6 +47,12 @@
 				"file" : 0,
 				"line" : 18,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
 			}
 		]
 	},
@@ -81,6 +87,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "/Projects/C++/ThreeBodySimulation/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/usr/include"
 				}
 			],
 			"language" : "CXX",
