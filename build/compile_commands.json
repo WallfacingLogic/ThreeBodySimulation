@@ -1,13 +1,13 @@
 [
 {
   "directory": "/Projects/C++/ThreeBodySimulation/build",
-  "command": "/usr/bin/x86_64-w64-mingw32-g++  -I/Projects/C++/ThreeBodySimulation/include -I/usr/include -g -std=gnu++17 -Wall -Wextra -O2 -o CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o -c /Projects/C++/ThreeBodySimulation/src/main.cpp",
+  "command": "/usr/bin/g++  -I/Projects/C++/ThreeBodySimulation/include -g -std=gnu++17 -Wall -Wextra -O2 -o CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o -c /Projects/C++/ThreeBodySimulation/src/main.cpp",
   "file": "/Projects/C++/ThreeBodySimulation/src/main.cpp",
   "output": "CMakeFiles/ThreeBodySimulation.dir/src/main.cpp.o"
 },
 {
   "directory": "/Projects/C++/ThreeBodySimulation/build",
-  "command": "/usr/bin/x86_64-w64-mingw32-g++  -I/Projects/C++/ThreeBodySimulation/include -I/usr/include -g -std=gnu++17 -Wall -Wextra -O2 -o CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o -c /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp",
+  "command": "/usr/bin/g++  -I/Projects/C++/ThreeBodySimulation/include -g -std=gnu++17 -Wall -Wextra -O2 -o CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o -c /Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp",
   "file": "/Projects/C++/ThreeBodySimulation/src/ThreeBodySolver.cpp",
   "output": "CMakeFiles/ThreeBodySimulation.dir/src/ThreeBodySolver.cpp.o"
 }

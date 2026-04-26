@@ -439,7 +439,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/opt/cmake/share/cmake-4.3/Modules/Platform/Linker/Linux-CXX.cmake"
+			"path" : "/opt/cmake/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/cmake/share/cmake-4.3/Modules/Linker/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
