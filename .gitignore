@@ -361,3 +361,16 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# CMake build artifacts
+build/
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+
+# Logs and editor files
+*.log
+*.swp
+
+# macOS
+.DS_Store
