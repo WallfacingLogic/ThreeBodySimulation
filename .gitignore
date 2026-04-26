@@ -372,5 +372,8 @@ CMakeCache.txt
 *.log
 *.swp
 
+# VS Code configuration
+.vscode/
+
 # macOS
 .DS_Store
