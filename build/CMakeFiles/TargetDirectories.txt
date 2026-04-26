@@ -1,3 +1,0 @@
-/Projects/C++/ThreeBodySimulation/build/CMakeFiles/ThreeBodySimulation.dir
-/Projects/C++/ThreeBodySimulation/build/CMakeFiles/edit_cache.dir
-/Projects/C++/ThreeBodySimulation/build/CMakeFiles/rebuild_cache.dir
